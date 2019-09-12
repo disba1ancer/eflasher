@@ -40,6 +40,8 @@ struct ec_StateBackup {
     uint8_t SPIcfg;
 };
 
+extern uint16_t ADDRESS_PORT_HIGH, ADDRESS_PORT_LOW, DATA_PORT;
+
 uint8_t                 ec_readByte         (uint16_t address);
 void                    ec_writeByte        (uint16_t address, uint8_t byte_val);
 void                    ec_selectAddress    (uint16_t address);

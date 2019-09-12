@@ -1,10 +1,8 @@
 #include "ecfunc.h"
 
-//enum Ports {
-#define    ADDRESS_PORT_HIGH  0xFF29,
-#define    ADDRESS_PORT_LOW  0xFF2A,
-#define    DATA_PORT  0xFF2B,
-//};
+uint16_t    ADDRESS_PORT_HIGH = 0xFF29,
+            ADDRESS_PORT_LOW = 0xFF2A,
+            DATA_PORT = 0xFF2B;
 
 uint8_t ec_readByte(uint16_t address) {
     uint8_t result;
